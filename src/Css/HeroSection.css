@@ -1,0 +1,104 @@
+.hero-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-bg {
+    background-image: url('https://plus.unsplash.com/premium_photo-1678283974882-a00a67c542a9?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your transportation image URL */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  /* Headline animation: fade in */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fade-in 2s ease-out forwards;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 2s 0.5s ease-out forwards;
+  }
+  
+  /* CTA Button animation: pulse */
+  .hero-cta {
+ font-size: 1.65rem;
+    color: white;
+    background-color: #7a6df5; /* CTA button color */
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite; 
+    color: white;
+    border: none;
+    
+    
+    
+    
+   
+  }
+  
+  .hero-cta:hover {
+    background-color: #bfb9fab6; /* Darker shade on hover */
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  

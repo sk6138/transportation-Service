@@ -6,13 +6,30 @@
 
     padding: 5px;
     width: 80px;
-    background-color: #048eb7;
+    background-color: #7a6df5;
 }
 
 .btn-login:hover{
-    background-color: #07a6d7;
+    background-color: #bfb9fab6;
+}
+.nav-link{
+    color: white;
 }
 .container-center{
-    display: flex;
-    justify-content: center;
+    position: fixed; /* This makes the navbar stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Semi-transparent background */
+    z-index: 10; /* Ensures it sits on top of other content */
+    padding: 20px 40px;
+    height:10%;
+    font-size: 20px ;
+    color: aliceblue;
+
 }
+.d-flex {
+    position: absolute; /* This removes it from normal flow */
+    right: 20px; /* Adjust position from the right */
+    top: 20px; /* Adjust position from the top */
+  }

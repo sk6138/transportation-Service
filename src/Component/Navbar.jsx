@@ -10,6 +10,7 @@ function Navbar() {
           {/* Brand/Logo */}
           <a href="/" className="navbar-brand">
             {/* <img src="image/home.png" alt="" style={{ width: '25px' }} /> */}
+            
           </a>
 
           {/* Hamburger icon */}
@@ -30,7 +31,7 @@ function Navbar() {
             {/* Centered links */}
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a href="#" className="nav-link link-secondary">
+                <a href="#" className="nav-link ">
                   Home
                 </a>
               </li>
@@ -52,6 +53,11 @@ function Navbar() {
               <li className="nav-item">
                 <a href="#" className="nav-link">
                   About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Track 
                 </a>
               </li>
             </ul>

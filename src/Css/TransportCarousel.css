@@ -1,0 +1,15 @@
+.carousel-container {
+    text-align: center;
+    
+    position: relative;
+  }
+  
+ 
+  
+  .carousel-container .caption {
+    
+    font-size: 20px;
+    color: #1571bc;
+    font-weight: bold;
+  }
+  
