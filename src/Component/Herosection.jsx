@@ -21,7 +21,7 @@ const HeroSection = () => {
       </div>
     </div>
     <div className="w-40">
-      <img src="src\image\6195020.jpg" alt="" style={{ width: '55vw' }} />
+      <img src="../image/6195020.jpg" alt="" style={{ width: '55vw' }} />
     </div>
   </div>
 </div>
