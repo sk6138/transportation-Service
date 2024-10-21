@@ -1,0 +1,87 @@
+/* General styling for the section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Grid layout for service cards */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Service card design */
+  .service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s ease forwards;
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    color: #f76c6c; /* Icon color */
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Animation effect */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation trigger for service cards */
+  .animate-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .animate-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .animate-card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  /* Hover effects */
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  

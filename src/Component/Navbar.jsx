@@ -5,76 +5,63 @@ import '../Css/Navbar.css';
 function Navbar() {
   return (
     <div className="container-center">
-      <nav className="navbar navbar-expand-md navbar-light py-3 mb-4">
-        <div className="container-fluid">
-          {/* Brand/Logo */}
-          <a href="/" className="navbar-brand">
-            {/* <img src="image/home.png" alt="" style={{ width: '25px' }} /> */}
-            
-          </a>
+    
+    
+        <nav className="navbar navbar-expand-md navbar-light  py-3 mb-4">
+            <div className="container-fluid">
+                
+                <a href="/" className="navbar-brand">
+                    <img src="src\image\home.png" alt="" />
+                </a>
 
-          {/* Hamburger icon */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+               
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-          {/* Collapsible menu */}
-          <div className="collapse navbar-collapse" id="navbarNav">
-            {/* Centered links */}
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a href="#" className="nav-link ">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  FAQs
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Track 
-                </a>
-              </li>
-            </ul>
+                
+                <div className="collapse navbar-collapse" id="navbarNav">
+                   
+                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a href="#" className="nav-link link-secondary fw-bolder me-2">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <div className="dropdown">
+                                <a className="btn fw-bolder text-secondary dropdown-toggle py-2 pe-0 px-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
 
-            {/* Right aligned buttons */}
-            <div className="d-flex">
-              <button type="button" className="btn-login me-2">
-                Login
-              </button>
-              <button type="button" className="btn-login">
-                Sign-up
-              </button>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item fw-semibold" href="#">Deliver item</a></li>
+                                    <li><a className="dropdown-item fw-semibold" href="#">Rent vechile</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link fw-bolder">Contact</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link fw-bolder">FAQs</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link fw-bolder">About</a>
+                        </li>
+                    </ul>
+
+                  
+                    <div className="d-flex">
+                        <button type="button" className="btn-login  me-2">Login</button>
+                        <button type="button" className="btn-login">Sign-up</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </div>
+
   );
 }
 

@@ -1,35 +1,28 @@
-
-.btn-login{
+.btn-login {
     color: white;
     border: none;
     border-radius: 20px;
-
     padding: 5px;
     width: 80px;
-    background-color: #7a6df5;
+    background-color: #048eb7;
 }
 
-.btn-login:hover{
-    background-color: #bfb9fab6;
+.btn-login:hover {
+    background-color: #046f90;
 }
-.nav-link{
+
+.btn-service {
     color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+    background-color: #048eb7;
 }
-.container-center{
-    position: fixed; /* This makes the navbar stick to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; /* Semi-transparent background */
-    z-index: 10; /* Ensures it sits on top of other content */
-    padding: 20px 40px;
-    height:10%;
-    font-size: 20px ;
-    color: aliceblue;
 
+.btn-service:hover {
+    background-color: #046f90;
 }
-.d-flex {
-    position: absolute; /* This removes it from normal flow */
-    right: 20px; /* Adjust position from the right */
-    top: 20px; /* Adjust position from the top */
-  }
+.navbar-brand img {
+    width: 25px;
+}

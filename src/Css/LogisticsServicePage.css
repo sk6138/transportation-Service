@@ -1,0 +1,125 @@
+/* Page container styling */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Hero section styling */
+  .hero-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Services section styling */
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+  
+  /* Hover animation for .service-card */
+.service-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    height: 250px;
+    transition: transform 1.7s ease, box-shadow 1.7s ease;
+    padding: 20px;
+    overflow: hidden; /* Ensures content doesn't overflow */
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05) rotate(1deg); /* Slight scaling and rotation */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+  }
+  
+  /* Add a subtle shine effect on hover */
+  .service-card:hover::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: transform 1.7s ease-in-out;
+    z-index: 0;
+  }
+  
+  .service-card:hover::before {
+    transform: translate(150%, 150%); /* Animate shine movement */
+  }
+  
+  .service-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above shine effect */
+  }
+  
+  
+  /* Dark overlay for better text readability */
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 12px;
+  }
+  
+  .service-title, .service-description {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .services-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
