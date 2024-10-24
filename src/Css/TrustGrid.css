@@ -1,0 +1,64 @@
+/* Grid Container */
+.trust-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+  }
+  
+  /* Grid Item */
+  .trust-grid-item {
+    background-size: cover; /* Background image covers the entire grid item */
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 300px; /* Fixed height for each grid item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Grid Item Content */
+  .trust-grid-content {
+    background-color: rgba(228, 226, 226, 0.241); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 8px;
+     font-weight: 700;
+     letter-spacing: 0.2px;
+    color: #048eb7;
+  }
+  
+  /* Title Styling */
+  .trust-grid-title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  /* Description Styling */
+  .trust-grid-description {
+    font-size: 1rem;
+  }
+  
+  /* Hover Effect */
+  .trust-grid-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Responsive for Tablets */
+  @media (max-width: 768px) {
+    .trust-grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 480px) {
+    .trust-grid-container {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }
+  

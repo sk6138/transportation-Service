@@ -1,0 +1,72 @@
+.enhanced-delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content horizontally */
+    padding: 20px;
+     /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .delivery-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#048eb7 ;
+  }
+  
+  .delivery-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 20px; /* Space between the columns */
+    width: 100%; /* Make the grid take full width */
+    max-width: 1200px; /* Optional max width for the grid */
+  }
+  
+  .metric {
+    background: #ffffff; /* White background for each metric box */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for metrics */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+    text-align: center; /* Center text */
+  }
+  
+  .metric:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .metric-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+  }
+  
+  .metric-value {
+    font-size: 24px;
+    font-weight: bold; /* Bold value */
+    color: #048eb7; /* Blue color for the values */
+  }
+  
+  
+  /* Fade-in animation */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-up animation for each metric */
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
