@@ -1,143 +1,197 @@
-
-    
-  /* General container setup */
+/* General container setup */
 .contact-us-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Form container */
-  .contact-us-form-container {
-    flex: 1;
-    background-color: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 70vh;
+}
+
+/* Form container */
+.contact-us-form-container {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Form and labels */
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  color: #048eb7;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+}
+
+input,
+textarea {
+  margin-top: 5px;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #048eb7;
+  outline: none;
+  transform: scale(1.05);
+}
+
+textarea {
+  height: 80px; /* Increased height for better readability */
+  resize: vertical; /* Allow resizing for better usability */
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Submit button container */
+.contactSubmitbtn {
+  display: flex;
+  justify-content: flex-end;  /* Align the button to the right */
+}
+
+/* Button styling */
+.submit-button {
+  background-color: #048eb7;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 30%;
+}
+
+.submit-button:hover {
+  background-color: #046f90;
+  transform: scale(1.05);
+}
+
+/* Image container */
+.contact-us-image-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.contact-us-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.contact-us-image-container:hover .contact-us-image {
+  opacity: 0.9;
+}
+
+/* Animation for form */
+@keyframes slideIn {
+  from {
     transform: translateX(-100%);
-    animation: slideIn 1s ease-out forwards;
   }
-  
-  /* Form and labels */
-  .contact-us-form {
-    display: flex;
-    flex-direction: column;
+  to {
+    transform: translateX(0);
   }
-  
-  .contact-us-title {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 28px;
-    color: #048eb7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-us-container {
+    height: auto; /* Flexible height for medium screens */
   }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-size: 16px;
-    color: #555;
-  }
-  
+
   input,
   textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    font-size: 13px;
+    padding: 10px; /* Reduce padding slightly for smaller devices */
   }
-  
-  input:focus,
-  textarea:focus {
-    border-color: #048eb7;
-    outline: none;
-    transform: scale(1.05);
-  }
-  
-  textarea {
-    min-height: 100px;
-  }
-  
-  /* Error message styles */
-  .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  .contactSubmitbtn{
-    display: flex;
-  justify-content: flex-end;  /* Align the button to the right */
-  
-  }
-  
-  /* Button styling */
+
   .submit-button {
-    
-    background-color: #048eb7;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 30%;
+    width: 40%; /* Adjust button width for medium screens */
   }
-  
-  .submit-button:hover {
-    background-color: #046f90;
-    transform: scale(1.05);
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+    height: auto;
   }
-  
-  /* Image container */
+
+  .contact-us-form-container {
+    order: 2;
+    padding: 20px;
+  }
+
   .contact-us-image-container {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-    background-color: #f5f5f5;
+    order: 1;
+    height: 40vh; /* Adjust image height for mobile */
   }
-  
-  .contact-us-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1s ease;
+
+  input,
+  textarea {
+    font-size: 12px;
+    padding: 8px;
+    height: 30px;
   }
-  
-  .contact-us-image-container:hover .contact-us-image {
-    transform: scale(1.1);
-    opacity: 0.9;
+
+  .submit-button {
+    width: 100%; /* Full width for mobile devices */
+    padding: 10px;
   }
-  
-  /* Animation for form */
-  @keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+}
+
+/* TV and Large Desktops */
+@media (min-width: 1440px) {
+  .contact-us-container {
+    height: 80vh; /* Increase height for large screens */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-us-container {
-      flex-direction: column;
-    }
-  
-    .contact-us-form-container {
-      order: 2;
-    }
-  
-    .contact-us-image-container {
-      order: 1;
-    }
+
+  .contact-us-title {
+    font-size: 32px; /* Larger title for big screens */
   }
-  
+
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .submit-button {
+    width: 25%; /* Smaller button for large screens */
+  }
+}

@@ -1,102 +1,180 @@
-.testimonial-containerh3{
- text-align: center;
- color: #048eb7;
- margin-top: 5%;
- /* margin-bottom: -10%; */
+/* Testimonial Container Heading */
+.testimonial-containerh3 {
+  text-align: center;
+  color: #048eb7;
+  margin: 2%;
 }
+
 /* Testimonial Container */
 .testimonial-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 65vh;
-    /* background: linear-gradient(135deg, #048eb7, #00c2ff, #ffffff); */
-    /* font-family: 'Roboto', sans-serif; */
-  }
-  
-  .testimonial-content {
-    width: 60%;
-    max-width: 900px;
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
-  }
-  
-  .testimonial-content:hover {
-    transform: scale(1.03);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Testimonial Text */
-  .testimonial-text p {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #333;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  height: auto; /* Make it auto for flexible height on smaller devices */
+  margin-bottom: 30px;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  max-width: 1200px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.testimonial-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonial Text */
+.testimonial-text p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInText 0.5s ease-in forwards;
+}
+
+@keyframes fadeInText {
+  0% {
     opacity: 0;
-    animation: fadeInText 0.5s ease-in forwards;
+    transform: translateY(30px);
   }
-  
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Profile Section */
-  .testimonial-profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+}
+
+/* Profile Section */
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #048eb7;
+  margin-right: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.testimonial-image:hover {
+  transform: scale(1.53);
+}
+
+.testimonial-name h4 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #048eb7;
+}
+
+.testimonial-name p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-content {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Responsive Design */
+
+/* Medium Devices: Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .testimonial-content {
+    padding: 1.5rem;
+    max-width: 90%; /* Reduce max-width to fit better on smaller screens */
+  }
+
+  .testimonial-text p {
+    font-size: 1.2rem; /* Slightly smaller font size for tablets */
+  }
+
   .testimonial-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 4px solid #048eb7;
-    margin-right: 1rem;
-    transition: transform 0.4s ease;
+    width: 70px;
+    height: 70px;
   }
-  
-  .testimonial-image:hover {
-    transform: scale(1.53);
-  }
-  
+
   .testimonial-name h4 {
-    font-size: 1.25rem;
-    margin: 0;
-    color: #048eb7;
+    font-size: 1.15rem;
   }
-  
+
   .testimonial-name p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem;
   }
+}
+
+/* Small Devices: Mobile Phones */
+@media (max-width: 768px) {
   
-  /* Smooth Fade-in Animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
   
   .testimonial-content {
-    animation: fadeInUp 1s ease-in-out;
+    padding: 1rem;
+    max-width: 95%; /* More compact layout for mobile */
   }
-  
+
+  .testimonial-text p {
+    font-size: 1rem; /* Smaller font for mobile */
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-name h4 {
+    font-size: 1rem;
+  }
+
+  .testimonial-name p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large Devices: TVs and large desktops */
+@media (min-width: 1440px) {
+  .testimonial-content {
+    padding: 3rem;
+    max-width: 80%; /* Larger width for big screens */
+  }
+
+  .testimonial-text p {
+    font-size: 2rem; /* Larger text for big screens */
+  }
+
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial-name h4 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-name p {
+    font-size: 1.2rem;
+  }
+}

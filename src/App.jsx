@@ -24,7 +24,7 @@ export default function App() {
     <div>
        <Navbar/>
       <HeroSection/>
-      <Service/>
+      {/* <Service/> */}
       <TrustGrid/>
       <EnhancedDeliveryStatus/>
       {/* <BrandLogos/> */}

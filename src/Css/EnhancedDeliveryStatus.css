@@ -1,72 +1,130 @@
 .enhanced-delivery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align the content horizontally */
-    padding: 20px;
-     /* Light background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Styling for the header */
+.delivery-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #048eb7;
+}
+
+/* Delivery Metrics Grid for large screens (desktops, TVs) */
+.delivery-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Optional max width for the grid */
+}
+
+/* Metric box styling */
+.metric {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.metric:hover {
+  transform: scale(1.05); /* Hover scale effect */
+}
+
+.metric-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #048eb7;
+}
+
+/* Fade-up animation */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .delivery-header {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color:#048eb7 ;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+/* Responsive Design */
+
+/* Tablets: 2-column layout for medium screens */
+@media (max-width: 1024px) {
   .delivery-metrics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    gap: 20px; /* Space between the columns */
-    width: 100%; /* Make the grid take full width */
-    max-width: 1200px; /* Optional max width for the grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 15px;
   }
-  
+
   .metric {
-    background: #ffffff; /* White background for each metric box */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners for metrics */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s; /* Smooth scaling on hover */
-    text-align: center; /* Center text */
+    padding: 15px;
   }
-  
-  .metric:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-  }
-  
+
   .metric-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333; /* Darker text color */
+    font-size: 16px;
   }
-  
+
   .metric-value {
-    font-size: 24px;
-    font-weight: bold; /* Bold value */
-    color: #048eb7; /* Blue color for the values */
+    font-size: 22px;
   }
-  
-  
-  /* Fade-in animation */
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+
+/* Mobile: 1-column layout for smaller screens */
+@media (max-width: 768px) {
+  .delivery-metrics {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 10px;
   }
-  
-  /* Fade-up animation for each metric */
-  @keyframes fade-up {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .metric {
+    padding: 10px;
   }
-  
+
+  .metric-title {
+    font-size: 14px;
+  }
+
+  .metric-value {
+    font-size: 20px;
+  }
+
+  .delivery-header {
+    font-size: 20px;
+  }
+}
+
+/* Large TVs and desktops: increase spacing and font sizes */
+@media (min-width: 1440px) {
+  .delivery-metrics {
+    gap: 30px; /* Larger gaps between items */
+  }
+
+  .metric {
+    padding: 25px;
+  }
+
+  .metric-title {
+    font-size: 20px;
+  }
+
+  .metric-value {
+    font-size: 28px;
+  }
+
+  .delivery-header {
+    font-size: 28px;
+  }
+}
