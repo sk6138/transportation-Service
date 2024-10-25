@@ -4,6 +4,7 @@
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
     gap: 20px; /* Space between columns */
     padding: 20px;
+     
   }
   
   /* Grid Item */
@@ -12,7 +13,7 @@
     background-position: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    height: 300px; /* Fixed height for each grid item */
+    height: 400px; /* Fixed height for each grid item */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,25 +25,37 @@
   
   /* Grid Item Content */
   .trust-grid-content {
-    background-color: rgba(228, 226, 226, 0.241); /* Dark overlay for readability */
+    background-color: rgba(228, 226, 226, 0.666); /* Dark overlay for readability */
     padding: 20px;
     border-radius: 8px;
      font-weight: 700;
      letter-spacing: 0.2px;
-    color: #048eb7;
+    
   }
   
   /* Title Styling */
   .trust-grid-title {
     margin-bottom: 10px;
     font-size: 1.8rem;
+    color: rgb(54, 54, 54);
   }
   
   /* Description Styling */
   .trust-grid-description {
     font-size: 1rem;
   }
-  
+  .show-more-button{
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: #048eb7;
+  }
+  .show-more-button:hover{
+    background-color: #046f90;
+  }
   /* Hover Effect */
   .trust-grid-item:hover {
     transform: scale(1.05); /* Slight zoom on hover */

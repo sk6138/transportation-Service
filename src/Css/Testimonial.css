@@ -9,13 +9,15 @@
 .testimonial-container {
   display: flex;
   justify-content: center;
-  height: auto; /* Make it auto for flexible height on smaller devices */
+  align-items: center;
+  height: 60vh; /* Make it auto for flexible height on smaller devices */
   margin-bottom: 30px;
 }
 
 /* Testimonial Content */
 .testimonial-content {
   max-width: 1200px;
+  height: 70%;
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 20px;
@@ -128,11 +130,17 @@
 
 /* Small Devices: Mobile Phones */
 @media (max-width: 768px) {
-  
+  .testimonial-containerh3 {
+    text-align: center;
+    color: #048eb7;
+    margin-top: 80%;
+  }
   
   .testimonial-content {
+    margin-top: 4%;
     padding: 1rem;
     max-width: 95%; /* More compact layout for mobile */
+    height: 50vh;
   }
 
   .testimonial-text p {
