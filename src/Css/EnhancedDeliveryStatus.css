@@ -93,7 +93,7 @@
 @media (max-width: 768px) {
   
   .delivery-metrics {
-    margin-top: 300px;
+    margin-top: 40%;
     grid-template-columns: 1fr; /* 1 column for mobile */
     gap: 10px;
   }
@@ -113,7 +113,7 @@
   .delivery-header {
     position: absolute;
     font-size: 24px;
-    margin-bottom: 180px;
+    margin-bottom: 100%;
     color: #048eb7;
   }
 }

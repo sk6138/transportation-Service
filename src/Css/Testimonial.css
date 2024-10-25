@@ -133,14 +133,14 @@
   .testimonial-containerh3 {
     text-align: center;
     color: #048eb7;
-    margin-top: 80%;
+    margin-top: 25%;
   }
   
   .testimonial-content {
     margin-top: 4%;
     padding: 1rem;
     max-width: 95%; /* More compact layout for mobile */
-    height: 50vh;
+    height: 35vh;
   }
 
   .testimonial-text p {
