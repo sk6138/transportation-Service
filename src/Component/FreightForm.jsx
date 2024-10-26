@@ -68,7 +68,9 @@ const FreightForm = () => {
   };
 
   const getCoordinates = async (address) => {
-    const apiKey = '763223e205af4fcf8a369c34942a5193'; // Replace with your actual API key
+    
+    const apiKey = process.env.REACT_APP_API_KEY;
+    console.log(apiKey);
     const response = await fetch(
       `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${apiKey}`
     );
