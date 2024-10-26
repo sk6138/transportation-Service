@@ -1,0 +1,72 @@
+.delivery-booking-guide {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .guide-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #444;
+    cursor: pointer;
+    margin-bottom: 20px;
+    gap: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .guide-title:hover {
+    color: #048eb7;
+  }
+  
+  .guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .guide-step {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .step-header:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .step-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .step-content {
+    padding: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .step-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

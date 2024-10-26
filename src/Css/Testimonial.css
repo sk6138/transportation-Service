@@ -2,7 +2,7 @@
 .testimonial-containerh3 {
   text-align: center;
   color: #048eb7;
-  margin: 2%;
+  margin: 4%;
 }
 
 /* Testimonial Container */
@@ -10,14 +10,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh; /* Make it auto for flexible height on smaller devices */
+  height: 50vh; /* Make it auto for flexible height on smaller devices */
   margin-bottom: 30px;
 }
 
 /* Testimonial Content */
 .testimonial-content {
   max-width: 1200px;
-  height: 70%;
+  margin-top: -5%;
+  height: 40vh;
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 20px;
@@ -130,24 +131,25 @@
 
 /* Small Devices: Mobile Phones */
 @media (max-width: 768px) {
+  
   .testimonial-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh; /* Make it auto for flexible height on smaller devices */
+    height: 50vh; /* Make it auto for flexible height on smaller devices */
     margin-bottom: 30px;
   }
   .testimonial-containerh3 {
     text-align: center;
     color: #048eb7;
-    margin-top: 25%;
+    margin-top: 30px;
   }
   
   .testimonial-content {
     margin-top: 1%;
     padding: 1rem;
     max-width: 95%; /* More compact layout for mobile */
-    height: 35vh;
+    height: 50vh;
   }
 
   .testimonial-text p {

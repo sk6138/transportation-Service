@@ -3,7 +3,7 @@ import '../Css/Service.css'
 export default function Service() {
   return (
     <div>
-        <div className="grid-container">
+        <div className="grid-container container">
       {/* Column 1 */}
       <div className="grid-item" style={{ backgroundImage: `url('https://i.postimg.cc/1zWZd700/20123576-6216857.jpg')` }}>
         <h3>Goods Dilivery</h3>

@@ -4,7 +4,7 @@ import '../Css/Navbar.css';
 
 function Navbar() {
   return (
-    <div className="container-center">
+    <div className="container-center container">
     
     
         <nav className="navbar navbar-expand-md navbar-light  py-3 mb-4">

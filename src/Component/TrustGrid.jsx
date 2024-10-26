@@ -9,10 +9,7 @@ const TrustGrid = () => {
     { id: 2, title: "Car for Rent", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
     { id: 3, title: "All Over India", imageUrl: "url('https://i.postimg.cc/RFVTZ3Q7/4925394-2575825.jpg')" },
     { id: 4, title: "On Low Cost", imageUrl: "url('https://i.postimg.cc/x1n54FJp/1287068-155998-OVWJKP-626.jpg')" },
-    { id: 5, title: "Fast Delivery", imageUrl: "url('https://i.postimg.cc/8PVPM3Zs/6821436-60537.jpg')" },
-    { id: 6, title: "Reliable Service", imageUrl: "url('https://i.postimg.cc/sggzJR7f/28695080-onlinesupport-1.jpg')" },
-    { id: 7, title: "Affordable Pricing", imageUrl: "url('https://i.postimg.cc/6q6K1sgh/2324793-307721-P8-CY5-X-486.jpg')" },
-    { id: 8, title: "24/7 Support", imageUrl: "url('https://i.postimg.cc/0ysTt1SK/rb-82225.png')" },
+ 
   ];
 
   // Decide which columns to display based on the state
@@ -32,10 +29,7 @@ const TrustGrid = () => {
         </div>
       ))}
 
-      {/* Show More button */}
-      <button onClick={() => setShowAll(!showAll)} className="show-more-button">
-        {showAll ? "Show Less" : "Show More"}
-      </button>
+     
     </div>
   );
 };

@@ -42,8 +42,9 @@ const Testimonial = () => {
 
   return (
     <>
+     <div className="testimonial-container1  ">
     <h3 className="testimonial-containerh3">Client Reviews</h3>
-    <div className="testimonial-container">
+    <div className="testimonial-container contianer">
       <div className="testimonial-content">
         <div className="testimonial-text">
           <p>"{text}"</p>
@@ -56,6 +57,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </>
   );

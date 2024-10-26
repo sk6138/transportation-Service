@@ -31,10 +31,12 @@ const EnhancedDeliveryStatus = () => {
   }, []);
 
   return (
-    <div className="enhanced-delivery-container">
-      <h3 className="delivery-header">Delivery Performance</h3>
-
-      <div className="delivery-metrics">
+   
+     
+     <>
+      <h3 className="deliveryHeading">Delivery Status</h3>
+      <div className="delivery-metrics container">
+       
         {/* Successful Deliveries */}
         <div className="metric">
           <h4 className="metric-title">Successful Deliveries</h4>
@@ -59,7 +61,8 @@ const EnhancedDeliveryStatus = () => {
           <p className="metric-value">{customerSatisfaction}%</p>
         </div>
       </div>
-    </div>
+      </>
+    
   );
 };
 

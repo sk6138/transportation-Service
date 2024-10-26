@@ -1,7 +1,15 @@
 import React from 'react';
 import '../Css/HeroSection.css'; // Import CSS for styling
-
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
+  const navigation = useNavigate();
+  const gotoRent = () => {
+      
+    navigation("/Rent");
+  }
+  const gotoDelivery = () => {
+    navigation("/Delivery");
+}
   return (
     <>
    <div className="container-fluid r-crousel">
@@ -14,8 +22,8 @@ const HeroSection = () => {
             <p className="fs-4 fw-bolder text-secondary">Find best transport services here!</p>
           </div>
           <div className="d-flex">
-            <button type="button" className="btn-service fs-5 me-2">Deliver item</button>
-            <button type="button" className="btn-service fs-5">Rent vehicle</button>
+            <button type="button"  onClick={gotoDelivery} className="btn-service fs-5 me-2">Deliver item</button>
+            <button type="button" onClick={gotoRent} className="btn-service fs-5">Rent vehicle</button>
           </div>
         </div>
       </div>

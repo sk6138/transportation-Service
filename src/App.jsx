@@ -3,35 +3,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Navbar from './Component/Navbar';
+import HomePage from './Component/homepage';
 
-import HeroSection from './Component/Herosection';
-
-
-
-import Service from './Component/Service';
-
-import TrustGrid from './Component/TrustGrid';
-import EnhancedDeliveryStatus from './Component/EnhancedDeliveryStatus';
-import ContactUs from './Component/ContactUs';
-
-import Footer from './Component/Footer';
-import Testimonial from './Component/Testimonial';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Delivery from './Component/Delivery';
+import Rent from './Component/Rent';
 
 export default function App() {
   return (
-    <div>
-       <Navbar/>
-      <HeroSection/>
-      {/* <Service/> */}
-      <TrustGrid/>
-      <EnhancedDeliveryStatus/>
-      {/* <BrandLogos/> */}
-      <Testimonial/>
-     <ContactUs/>
-     <Footer/>
-     {/* <OCRComponent/> */}
-    </div>
+   
+    <Router>
+       <Routes>
+        <Route path="/home" element={<HomePage/> } />
+        <Route path="/" element={<HomePage/> } />
+        <Route path="/Rent" element={<Rent /> } />
+        <Route path="/Delivery" element={<Delivery /> } />
+      </Routes>
+      </Router>
+    
+    
   )
 }
