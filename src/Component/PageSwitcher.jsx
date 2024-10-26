@@ -55,9 +55,9 @@ const PageSwitcher = (props) => {
 
   return (
     <>
-    <div className="page-switcher conatainer">
+    <div className="page-switcher ">
       {/* Grid container */}
-      <div className="trust-grid-container">
+      <div className="trust-grid-container ">
         {filteredColumns.map(column => (
           <div
             key={column.id}
