@@ -213,6 +213,7 @@ import { addDays } from 'date-fns';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../Css/FreightForm.css';
 
+
 const weightCategories = [
   { label: '200-500 kg', min: 200, max: 500, image: '/images/weight-200-500.png' },
   { label: '500-1000 kg', min: 500, max: 1000, image: '/images/weight-500-1000.png' },
@@ -283,7 +284,7 @@ const FreightForm = () => {
         lng: data.results[0].geometry.lng,
       };
     } else {
-      setError('Unable to find location coordinates.');
+      setError('Unable to find location .');
       return null;
     }
   };
@@ -320,7 +321,13 @@ const FreightForm = () => {
   };
 
   const handleSubmit = () => {
-    alert('Form Submitted');
+    if(distance == null || distance<=0){
+      alert('Form Submitted is vaild due to your location input please enter valid location or use Nearest LandMark');
+    } 
+    else{
+      alert('Form Submitted');
+    }
+    
   };
 
   const renderStep = () => {
@@ -415,8 +422,8 @@ const FreightForm = () => {
         );
       case 5:
         return (
-          <div>
-            <h2>Review Your Details</h2>
+          <div className='review'  >
+            <h3>Review Your Details</h3>
             <p><strong>Weight Category:</strong> {formData.weightCategory}</p>
             <p><strong>Vehicle Type:</strong> {formData.vehicleType}</p>
             <p><strong>Pickup Date:</strong> {formData.pickupDate.toLocaleDateString()}</p>

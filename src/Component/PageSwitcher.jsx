@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import '../Css/PageSwitcher.css';
 import FreightForm from './FreightForm';
+import CancelBookingForm from './CancelBookingForm';
+import DeliveryTransactionList from './DeliveryTransactionList';
+import DeliveryTracking from './DeliveryTracking';
+import RentCarForm from './RentCarForm';
 
 const PageSwitcher = (props) => {
   console.log(props.start);
@@ -31,17 +35,26 @@ const PageSwitcher = (props) => {
       case 1:
         return <div><FreightForm/></div>;
       case 2:
-        return <div>Car for Rent Content</div>;
+        return <div className='Content'> <CancelBookingForm/></div>;
       case 3:
-        return <div>Service Across India Content</div>;
+        return  <DeliveryTransactionList/>;
       case 4:
-        return <div>Affordable Services Content</div>;
+        return <DeliveryTracking/>;
+        case 5:
+        return <RentCarForm/>;
+      case 6:
+        return <div className='Content'> <CancelBookingForm/></div>;
+      case 7:
+        return  <DeliveryTransactionList/>;
+      case 8:
+        return <DeliveryTracking/>;
       default:
         return null;
     }
   };
 
   return (
+    <>
     <div className="page-switcher">
       {/* Grid container */}
       <div className="trust-grid-container">
@@ -59,13 +72,15 @@ const PageSwitcher = (props) => {
         ))}
       </div>
 
-      {/* Conditionally render the content section only if an item is active */}
-      {activeButton && (
+     
+    </div>
+     {/* Conditionally render the content section only if an item is active */}
+     {activeButton && (
         <div className="page-content">
           {renderContent()}
         </div>
       )}
-    </div>
+    </>
   );
 };
 

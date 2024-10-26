@@ -1,0 +1,82 @@
+.cancel-booking-form {
+    max-width: 90%;  /* Adjust width for smaller screens */
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cancel-booking-form h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .cancel-booking-form label {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: block;
+    color: #333;
+  }
+  
+  .cancel-booking-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .cancel-booking-form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .cancel-booking-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-booking-form .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 600px) {
+    .cancel-booking-form {
+      padding: 1rem;
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+    }
+  
+    .cancel-booking-form h1 {
+      font-size: 1.25rem;
+    }
+  
+    .cancel-booking-form label, 
+    .cancel-booking-form input,
+    .cancel-booking-form button {
+      font-size: 0.9rem;
+    }
+  
+    .cancel-booking-form button {
+      padding: 0.6rem;
+    }
+  }
+  

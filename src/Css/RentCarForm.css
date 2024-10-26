@@ -1,0 +1,104 @@
+.rent-car-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+  }
+  
+  .rent-car-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .form-step {
+    transition: all 0.3s ease;
+  }
+  
+  .form-step h2 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .rent-car-form label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .rent-car-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .rent-car-form .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .rent-car-form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .rent-car-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fade animation */
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .rent-car-form {
+      padding: 1.5rem;
+    }
+  
+    .rent-car-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .rent-car-form .form-step h2 {
+      font-size: 1rem;
+    }
+  
+    .rent-car-form input, .rent-car-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
