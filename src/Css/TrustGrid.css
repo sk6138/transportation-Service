@@ -4,6 +4,8 @@
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
     gap: 20px; /* Space between columns */
     padding: 20px;
+    margin: 0 auto;
+    
      
   }
   
@@ -13,7 +15,7 @@
     background-position: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    height: 400px; /* Fixed height for each grid item */
+    height: 40vh; /* Fixed height for each grid item */
     display: flex;
     justify-content: center;
     align-items: center;

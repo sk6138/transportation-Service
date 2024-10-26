@@ -34,7 +34,7 @@
   
   button {
     padding: 10px 20px;
-    background-color: #f76c6c;
+    background-color: #046f90;
     color: white;
     border: none;
     border-radius: 5px;
@@ -43,12 +43,12 @@
   }
   
   button:hover {
-    background-color: #ff4b4b;
+    background-color: #033d4f;
   }
   
   .status-result {
     margin-top: 20px;
     font-size: 1.25rem;
-    color: #007bff;
+    color: #046f90;
   }
   

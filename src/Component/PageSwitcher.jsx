@@ -17,10 +17,10 @@ const PageSwitcher = (props) => {
     { id: 2, title: "Cancelation", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
     { id: 3, title: "All Transactions", imageUrl: "url('https://i.postimg.cc/RFVTZ3Q7/4925394-2575825.jpg')" },
     { id: 4, title: "Delivery Tracking", imageUrl: "url('https://i.postimg.cc/x1n54FJp/1287068-155998-OVWJKP-626.jpg')" },
-    { id: 5, title: "Rent a Car", imageUrl: "url('https://i.postimg.cc/8zLMT9Y8/rent-car-service.jpg')" },
-    { id: 6, title: "Extend Date", imageUrl: "url('https://i.postimg.cc/J0tFw3ph/extend-date.jpg')" },
-    { id: 7, title: "Special Car for Wedding", imageUrl: "url('https://i.postimg.cc/D0sHfMnd/wedding-car.jpg')" },
-    { id: 8, title: "Booking Modification", imageUrl: "url('https://i.postimg.cc/7hX4vTqL/booking-modification.jpg')" },
+    { id: 5, title: "Rent a Car", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 6, title: "Extend Date", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 7, title: "Special Car for Wedding", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 8, title: "Booking Modification", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
   ];
 
   // Filter the columns to only include those with IDs 1 through 4
@@ -55,7 +55,7 @@ const PageSwitcher = (props) => {
 
   return (
     <>
-    <div className="page-switcher">
+    <div className="page-switcher conatainer">
       {/* Grid container */}
       <div className="trust-grid-container">
         {filteredColumns.map(column => (
@@ -76,7 +76,7 @@ const PageSwitcher = (props) => {
     </div>
      {/* Conditionally render the content section only if an item is active */}
      {activeButton && (
-        <div className="page-content">
+        <div className="page-content conatianer">
           {renderContent()}
         </div>
       )}

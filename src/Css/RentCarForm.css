@@ -53,7 +53,7 @@
     padding: 0.75rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: #048eb7;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -62,7 +62,7 @@
   }
   
   .rent-car-form button:hover {
-    background-color: #0056b3;
+    background-color: #048eb7;
   }
   
   /* Fade animation */

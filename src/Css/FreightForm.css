@@ -43,14 +43,15 @@ input, select {
 
 /* Focus Effects */
 input:focus, select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  border-color: #046f90;
+  box-shadow: 0 0 8px rgba(31, 147, 214, 0.3);
+
   outline: none;
 }
 
 /* Button Styles */
 button {
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  background-color: 048eb7;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -65,7 +66,7 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 15px rgba(#048eb7, 0.2);
 }
 
 button:disabled {
@@ -147,7 +148,7 @@ button:disabled {
 }
 
 .vehicle-card .selected {
-  background-color: #007bff;
+  background-color: #046f90;
   color: #fff;
 }
 
