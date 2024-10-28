@@ -18,8 +18,8 @@ const PageSwitcher = (props) => {
     { id: 3, title: "All Transactions", imageUrl: "url('https://i.postimg.cc/RFVTZ3Q7/4925394-2575825.jpg')" },
     { id: 4, title: "Delivery Tracking", imageUrl: "url('https://i.postimg.cc/x1n54FJp/1287068-155998-OVWJKP-626.jpg')" },
     { id: 5, title: "Rent a Car", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
-    { id: 6, title: "Extend Date", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
-    { id: 7, title: "Special Car for Wedding", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 6, title: "Cancel Booking", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 7, title: "Learn Car Driving", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
     { id: 8, title: "Booking Modification", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
   ];
 
@@ -45,7 +45,7 @@ const PageSwitcher = (props) => {
       case 6:
         return <div className='Content'> <CancelBookingForm/></div>;
       case 7:
-        return  <DeliveryTransactionList/>;
+        return  null;
       case 8:
         return <DeliveryTracking/>;
       default:

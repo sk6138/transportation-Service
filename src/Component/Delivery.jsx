@@ -13,7 +13,7 @@ export default function Delivery() {
     <div>
       <Navbar/>
       <PageSwitcher start={start} end={end} />
-      <div className="FAQ">
+      {/* <div className="FAQ">
         <h3>FAQS</h3>
       
       <div className='Guide container'>
@@ -22,7 +22,7 @@ export default function Delivery() {
       <DeliveryBookingGuide/>
       <DeliveryBookingGuide/>
       </div>
-      </div>
+      </div> */}
       <Footer/>
     </div>
   )

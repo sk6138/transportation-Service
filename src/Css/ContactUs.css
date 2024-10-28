@@ -54,7 +54,7 @@ textarea {
   border-left: none;
   border-bottom: 1px solid #ccc;
   transition: all 0.3s ease;
-  height: 1%;
+  /* height: 1%; */
 }
 
 input:focus,
@@ -130,7 +130,7 @@ textarea {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1524px) {
   .contact-us-container {
     height: auto; /* Flexible height for medium screens */
   }

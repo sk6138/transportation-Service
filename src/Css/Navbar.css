@@ -1,3 +1,23 @@
+.navbar-brand{
+    width: 20%;
+}
+
+.login{
+    width: 20%;
+}
+
+.dropdown-item{
+    background-color: #048eb7;
+    margin-bottom: 3px;
+    border-radius: 20px;
+}
+.dropdown-item:hover{
+    background-color: #046f90;
+}
+.dropdown-item:active{
+    background-color: #fff;
+}
+
 .btn-login {
     color: white;
     border: none;

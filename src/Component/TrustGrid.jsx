@@ -7,8 +7,8 @@ const TrustGrid = () => {
   const columns = [
     { id: 1, title: "Goods Delivery", imageUrl: "url('https://i.postimg.cc/LXHxgQRZ/cargo-van-delivery-transportation-with-open-container-full-construction-material-barrels-isometric-v.jpg')" },
     { id: 2, title: "Car for Rent", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
-    { id: 3, title: "All Over India", imageUrl: "url('https://i.postimg.cc/RFVTZ3Q7/4925394-2575825.jpg')" },
-    { id: 4, title: "On Low Cost", imageUrl: "url('https://i.postimg.cc/x1n54FJp/1287068-155998-OVWJKP-626.jpg')" },
+    { id: 3, title: "Contact US", imageUrl: "url('https://i.postimg.cc/RFVTZ3Q7/4925394-2575825.jpg')" },
+    { id: 4, title: "About Us", imageUrl: "url('https://i.postimg.cc/x1n54FJp/1287068-155998-OVWJKP-626.jpg')" },
  
   ];
 

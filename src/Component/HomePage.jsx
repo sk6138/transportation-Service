@@ -10,6 +10,7 @@ import ContactUs from './ContactUs';
 import Footer from './Footer';
 import Testimonial from './Testimonial';
 import Delivery from './Delivery';
+import LoadingSpinner from './LoadingSpinner';
 
 
 export default function HomePage() {

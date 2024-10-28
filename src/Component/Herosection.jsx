@@ -22,7 +22,7 @@ const HeroSection = () => {
             <p className="fs-4 fw-bolder text-secondary">Find best transport services here!</p>
           </div>
           <div className="d-flex">
-            <button type="button"  onClick={gotoDelivery} className="btn-service fs-5 me-2">Deliver item</button>
+            <button type="button"  onClick={gotoDelivery} className="btn-service fs-5 me-2">Delivery item</button>
             <button type="button" onClick={gotoRent} className="btn-service fs-5">Rent vehicle</button>
           </div>
         </div>
@@ -35,8 +35,8 @@ const HeroSection = () => {
 </div>
 
 {/* Crousal for small devices */}
-<div className="container-fluid c-gradient" style={{ height: '80vh' }}>
-  <div className="m-3 d-flex align-items-center justify-content-center crousel-g-i" style={{ height: '100%' }}>
+<div className="container-fluid c-gradient" style={{ height: '90vh' }}>
+  <div className=" d-flex align-items-center justify-content-center crousel-g-i" style={{ height: '100%' }}>
     <div>
       <div>
         <div className="d-flex justify-content-center">
