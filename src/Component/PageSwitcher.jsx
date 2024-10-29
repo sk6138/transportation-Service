@@ -5,8 +5,10 @@ import CancelBookingForm from './CancelBookingForm';
 import DeliveryTransactionList from './DeliveryTransactionList';
 import DeliveryTracking from './DeliveryTracking';
 import RentCarForm from './RentCarForm';
+import { useNavigate } from 'react-router-dom';
 
 const PageSwitcher = (props) => {
+  const navigation = useNavigate();
   console.log(props.start);
   const start= (props.start);
   const end = (props.end);
@@ -21,6 +23,11 @@ const PageSwitcher = (props) => {
     { id: 6, title: "Cancel Booking", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
     { id: 7, title: "Learn Car Driving", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
     { id: 8, title: "Booking Modification", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    
+    { id: 9, title: "Goods Delivery ", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 10, title: "Rent Car", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 11, title: "Contact us", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
+    { id: 12, title: "About Us", imageUrl: "url('https://i.postimg.cc/GmGK7nmy/2150796946.jpg')" },
   ];
 
   // Filter the columns to only include those with IDs 1 through 4
@@ -29,6 +36,27 @@ const PageSwitcher = (props) => {
   const handleButtonClick = (buttonNumber) => {
     setActiveButton(buttonNumber);
   };
+
+  const gotoDelivery =() =>{
+    setTimeout(() => {
+      navigation("/Delivery");
+    }, 500); // Delay in milliseconds
+  }
+  const gotoRent =() =>{
+    setTimeout(() => {
+      navigation("/Rent");
+    }, 500); // Delay in milliseconds
+  }
+  const gotoContact =() =>{
+    setTimeout(() => {
+      navigation("/contact");
+    }, 500); // Delay in milliseconds
+  }
+  const gotoAbout =() =>{
+    setTimeout(() => {
+      navigation("/about");
+    }, 500); // Delay in milliseconds
+  }
 
   const renderContent = () => {
     switch (activeButton) {
@@ -48,6 +76,19 @@ const PageSwitcher = (props) => {
         return  null;
       case 8:
         return <DeliveryTracking/>;
+      
+      case 9:
+         gotoDelivery()
+         return null;
+         case 10:
+         gotoRent()
+         return null;
+         case 11:
+         gotoContact()
+         return null;
+         case 12:
+         gotoAbout()
+         return null;
       default:
         return null;
     }

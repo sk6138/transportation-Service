@@ -22,7 +22,7 @@ const Faqpage = lazy(() => import('../src/Component/Faqpage'));
 export default function App() {
   return (
    
-    <Router>
+    <Router >
       <Suspense fallback={<LoadingSpinner/>}>
       <Routes>
      

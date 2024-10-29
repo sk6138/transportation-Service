@@ -13,10 +13,13 @@ import Delivery from './Delivery';
 import LoadingSpinner from './LoadingSpinner';
 
 
+
+
 export default function HomePage() {
   return (
     <div>
        <Navbar/>
+     
       <HeroSection/>
       {/* <Service/> */}
       <TrustGrid/>

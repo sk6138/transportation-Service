@@ -4,6 +4,7 @@ import PageSwitcher from './PageSwitcher'
 import DeliveryBookingGuide from './DeliveryBookingGuide'
 import '../Css/Delivery.css'
 import Footer from './Footer'
+import Breadcrumb from './Breadcrumb'
 
 export default function Rent() {
   const start =5;
@@ -12,6 +13,7 @@ export default function Rent() {
   return (
     <div>
       <Navbar/>
+      <Breadcrumb/>
       <PageSwitcher start={start} end={end}/>
       {/* <div className="FAQ">
         <h3>FAQS</h3>
